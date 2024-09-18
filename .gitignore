@@ -1,0 +1,27 @@
+# Archivos de compilación generados por Gradle
+.gradle/
+build/
+bin/
+
+# Asegurarse de que no se ignore el wrapper de Gradle
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Incluir los archivos de código fuente
+!src/**
+
+# Ignorar otros archivos temporales y de compilación
+*.class
+*.log
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.rar
+
+# Ignorar logs de errores de JVM
+hs_err_pid*
+replay_pid*
+
+# Ignorar archivos temporales
+*.tmp
