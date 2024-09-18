@@ -1,40 +1,42 @@
-# Sistema de Automatización de Solicitud de Tarjeta de Crédito (SASTC)
+# solicitudes_financieras_back
 
-El Sistema de Automatización de Solicitud de Tarjeta de Crédito (SASTC) es una aplicación desarrollada para el Banco "Centauros Bank", con el objetivo de automatizar y agilizar el proceso de solicitud de tarjetas de crédito para sus clientes.
+## Sistema de Gestión Automatizada de Solicitudes de Tarjeta de Crédito (SASTC)
+
+El **Sistema de Gestión Automatizada de Solicitudes de Tarjeta de Crédito (SASTC)** es una solución diseñada para el banco *Centauros Bank*, cuyo objetivo es optimizar y agilizar el proceso de solicitud de tarjetas de crédito para sus clientes, asegurando una mayor eficiencia en la validación de solicitudes, verificación crediticia, y gestión de cuentas.
 
 ## Descripción del Proyecto
 
-El proyecto SASTC se centra en optimizar los procesos asociados con la solicitud de tarjetas de crédito, desde la captura inicial de información del cliente hasta la entrega del producto final. El sistema automatiza tareas como la verificación crediticia, el procesamiento de documentos y la creación de cuentas, proporcionando una experiencia más eficiente tanto para los clientes como para el personal del banco.
+El propósito de este sistema es mejorar los procesos vinculados a la solicitud y procesamiento de tarjetas de crédito, desde la captura inicial de datos del cliente hasta la entrega de la tarjeta. El sistema automatiza operaciones clave, como la verificación del historial crediticio y el procesamiento de documentación, facilitando una experiencia fluida tanto para los usuarios como para el personal bancario.
 
-## Estructura del Proyecto
+## Arquitectura del Proyecto
 
-El proyecto sigue una arquitectura hexagonal, donde se separan claramente las capas de dominio, aplicación e infraestructura. A continuación se presenta la estructura del proyecto:
+El proyecto se fundamenta en una **arquitectura hexagonal**, también conocida como arquitectura limpia, que separa las diferentes capas de la aplicación de manera modular para asegurar un alto grado de mantenibilidad, extensibilidad y escalabilidad. A continuación, se describen brevemente las principales capas:
 
-- **dominio**: Contiene las clases que representan los objetos de dominio del negocio, como la solicitud de tarjeta de crédito y la verificación crediticia.
-- **aplicacion**: Aquí se encuentran las clases que implementan la lógica de negocio y los controladores que gestionan las solicitudes de los usuarios.
-- **infraestructura**: Contiene las implementaciones concretas de las interfaces definidas en la capa de aplicación, así como cualquier código relacionado con la persistencia de datos o la integración con sistemas externos.
-- **controladores**: Define los controladores que actúan como punto de entrada para las solicitudes de la interfaz de usuario.
+- **Dominio**: Define las entidades de negocio principales, como la *Solicitud de Tarjeta de Crédito* y los servicios de verificación de crédito.
+- **Aplicación**: Contiene la lógica de negocio que orquesta el flujo de las solicitudes y las interacciones entre las diferentes capas. Los controladores de esta capa gestionan las solicitudes provenientes de los usuarios.
+- **Infraestructura**: Provee las implementaciones concretas de las interfaces definidas en la capa de aplicación. También se encarga de la persistencia de datos y la integración con sistemas externos.
+- **Controladores**: Gestionan las interacciones del sistema con la capa de presentación (interfaz de usuario), sirviendo como punto de entrada para las solicitudes HTTP.
 
-## Configuración y Ejecución
+## Requisitos del Sistema
 
-Para ejecutar la aplicación SASTC, sigue estos pasos:
+Para ejecutar el sistema **SASTC**, es necesario cumplir con los siguientes requisitos:
 
-1. Clona el repositorio desde GitHub: `git clone https://github.com/tu_usuario/sastc.git`
-2. Importa el proyecto en tu entorno de desarrollo preferido.
-3. Asegúrate de tener todas las dependencias necesarias instaladas, incluyendo Java, Spring Framework, y MySQL.
-4. Configura la base de datos MySQL con las credenciales adecuadas y asegúrate de que el servidor esté en ejecución.
-5. Ejecuta la aplicación desde tu entorno de desarrollo o utilizando un servidor de aplicaciones compatible con Spring Boot.
+1. Clonar el repositorio desde GitHub: `git clone https://github.com/tu_usuario/sastc.git`
+2. Importar el proyecto en tu entorno de desarrollo preferido (IDE como IntelliJ IDEA o Eclipse).
+3. Asegurarse de que las dependencias necesarias estén correctamente instaladas, incluyendo **Java**, **Spring Framework**, y **MySQL**.
+4. Configurar la base de datos MySQL con las credenciales adecuadas, y verificar que el servidor de base de datos esté en ejecución.
+5. Ejecutar la aplicación utilizando un servidor compatible con **Spring Boot** desde el IDE o línea de comandos.
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Si deseas contribuir al desarrollo del proyecto SASTC, sigue estos pasos:
+Las contribuciones son bienvenidas. Si deseas colaborar en el desarrollo del sistema **SASTC**, sigue los siguientes pasos:
 
-1. Realiza un fork del repositorio.
-2. Crea una nueva rama para tu funcionalidad: `git checkout -b nueva-funcionalidad`
-3. Realiza tus cambios y commits: `git commit -am 'Añade nueva funcionalidad'`
-4. Sube tus cambios a tu repositorio: `git push origin nueva-funcionalidad`
-5. Crea un pull request en el repositorio original.
+1. Realiza un *fork* del repositorio.
+2. Crea una nueva rama para tu funcionalidad o corrección: `git checkout -b nueva-funcionalidad`.
+3. Implementa los cambios requeridos y realiza un commit: `git commit -am 'Agregar nueva funcionalidad'`.
+4. Sube tus cambios a tu repositorio remoto: `git push origin nueva-funcionalidad`.
+5. Envía un *pull request* hacia el repositorio original para revisión y aprobación.
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está licenciado bajo la **Licencia MIT**. Para más detalles, consulta el archivo `LICENSE`.
